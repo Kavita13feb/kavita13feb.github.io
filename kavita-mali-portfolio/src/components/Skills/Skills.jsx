@@ -78,10 +78,10 @@ name:"Node.JS"
 
   ]
   return (
-    <div id="skills" style={{width:'60%',height:'700px',margin:'-28% 20% 30%',boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',backgroundColor:'white'}}>
+    <div  id="skills" className='section' >
     
-    <h1 >Skills</h1>
-    <p style={{width:'60%',margin:'auto',textAlign:'justify'}}>
+    <h1 style={{marginLeft:"-80%"}}>Skills</h1>
+    <p className='text'>
       I am excited to showcase my skills. I have a strong passion
        for Website development, and I believe that I have the necessary knowledge and expertise 
        to contribute to a project/team/company. 
@@ -91,9 +91,9 @@ name:"Node.JS"
     <div className='skills-container'>
     {
 Skills.map((el)=>(
-  <div>
-<img src ={el.icon} width='30%'/>
-    <p>{el.name}</p>
+  <div className='skill-icon-container skills-card'>
+<img className='skills-card-img skill-icon' src ={el.icon} width='30%'/>
+    <p className="skills-card-name">{el.name}</p>
   </div>
 
 ))

@@ -3,9 +3,18 @@
 
 }
 body{
- background-color:blueviolet ;
+ background-color:rgb(59, 104, 120) ;
+ color: #a9afb7;
 }
-
+.Allthree{
+  display: grid;
+  width: 100%;
+  margin: auto;
+  border: 1px solid black;
+  grid-template-columns: 20% 59% 20%;
+  gap:1%;
+  padding-top: 6%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

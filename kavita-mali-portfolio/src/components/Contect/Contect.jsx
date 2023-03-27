@@ -4,42 +4,22 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import { sendEmail } from "./tools/tools";
  
 export const Contect = () => {
 
   const form = useRef();
 
-const sendEmail = (e) => {
-  e.preventDefault();
 
-  emailjs
-    .sendForm(
-      "service_nq68zlv",
-      "template_jz2fafs",
-      form.current,
-      "3Xj1FFOzzlVfAPWbH"
-    )
-    .then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        
-        console.log(error.text);
-      }
-    );
-
-  e.target.reset();
-};
   return (
     
-    <section className="contact section" id="contact"  style={{width:'60%',height:'1200px',margin:'-35% 20%',boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',backgroundColor:'white'}}>
+    <section id="contact"  className="contact section" >
       <h2 className="section_title">Get in touch</h2>
-      <span className="section_subtitle">Contact me</span>
+      {/* <span className="section_subtitle">Contact me</span> */}
 
-      <div className="contact_container container grid">
+      <div className="contact_container ">
         <div className="contact_content">
-          <h3 className="contact_title">Talk to me</h3>
+          <h3 className="contact_title">Contact me</h3>
 
           <div className="contact_info">
             <div className="contact_card">
@@ -47,11 +27,11 @@ const sendEmail = (e) => {
 
               <h3 className="contact_card-title">Email</h3>
               <span className="contact_card-data">
-                mondalmonojit1696@gmail.com
+              kavitamali0515@gmail.com
               </span>
 
               <a
-                href="mailto:mondalmonojit1696@gmail.com"
+                href="mailto:kavitamali0515@gmail.com"
                 target="_blank"
                 rel="noreferrer"
                 className="contact_button">
@@ -62,16 +42,16 @@ const sendEmail = (e) => {
 
             <div className="contact_card">
               <i className="bx bx-mobile contact_card-icon"></i>
-
+            
               <h3 className="contact_card-title">Phone</h3>
-              <span className="contact_card-data">+91 8670566093</span>
+              <span className="contact_card-data">+91 8740041513</span>
 
               <a
-                href="tel:+918670566093"
+                href="tel:+918740041513"
                 target="_blank"
                 rel="noreferrer"
                 className="contact_button">
-                Call me
+                Contact
                 <i className="bx bx-right-arrow-alt contact_button-icon"></i>
               </a>
             </div>
@@ -83,7 +63,7 @@ const sendEmail = (e) => {
               <span className="contact_card-data"></span>
 
               <a
-                href="https://github.com/ninja-mono1696"
+                href="https://github.com/kavita13feb"
                 target="_blank"
                 rel="noreferrer"
                 className="contact_button">
@@ -99,11 +79,11 @@ const sendEmail = (e) => {
               <span className="contact_card-data"></span>
 
               <a
-                href="https://www.linkedin.com/in/monojit1696"
+                href="http://www.linkedin.com/in/kavita-mali-132a92210"
                 target="_blank"
                 rel="noreferrer"
                 className="contact_button">
-                Message me
+                Connect
                 <i className="bx bx-right-arrow-alt contact_button-icon"></i>
               </a>
             </div>
@@ -113,7 +93,7 @@ const sendEmail = (e) => {
         <div className="contact_content">
           <h3 className="contact_title">Write me your message</h3>
 
-          <form className="contact_form" ref={form} onSubmit={sendEmail}>
+          <form className="contact_form" ref={form} onSubmit={()=>sendEmail(form)}>
             <div className="contact_form-div">
               <label className="contact_form-tag">Name</label>
               <input
