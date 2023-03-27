@@ -34,19 +34,7 @@ const Projects =[
     contributor:"Monojit Mondal",
     TotalMembers :4
   },
-,  {
-    Title:"EverHour",
-    Date : "2 October 2022",
-    Image : "https://i.postimg.cc/3xF4Lh5Q/ever-home.jpg",
-    Discription :"Everhour is a time tracking and team management tool that helps businesses and freelancers track their time spent on projects, tasks, and clients. It offers a range of features that allow users to manage projects, track time, and create reports.",
-    TechStack :"JS| CSS | HTML",
-    NetlifyLink :"https://dreamy-cendol-3a7724.netlify.app/",
-    GithubLink : "https://github.com/Kavita13feb/deep-sense-4601",
-    PictureDescription : ["https://i.postimg.cc/3xF4Lh5Q/ever-home.jpg","https://i.postimg.cc/dVrDhYtT/e-testi.jpg","https://i.postimg.cc/d3Zwg2hT/e-login.jpg","https://i.postimg.cc/59QXhLd3/ever-home2.jpg"],
-    ProjectType:"Indedual",
-    contributor:null,
-    
-  },  {
+  {
     Title:"ShopBag",
     Date : "11 November 2022",
     Image : "https://i.postimg.cc/QxwGRKDp/s-admin.jpg",
@@ -58,8 +46,19 @@ const Projects =[
     ProjectType:"Team",
     contributor:"Deepak Kumar",
     TotalMembers :4
+  },  {
+    Title:"EverHour",
+    Date : "2 October 2022",
+    Image : "https://i.postimg.cc/3xF4Lh5Q/ever-home.jpg",
+    Discription :"Everhour is a time tracking and team management tool that helps businesses and freelancers track their time spent on projects, tasks, and clients. It offers a range of features that allow users to manage projects, track time, and create reports.",
+    TechStack :"JS| CSS | HTML",
+    NetlifyLink :"https://dreamy-cendol-3a7724.netlify.app/",
+    GithubLink : "https://github.com/Kavita13feb/deep-sense-4601",
+    PictureDescription : ["https://i.postimg.cc/3xF4Lh5Q/ever-home.jpg","https://i.postimg.cc/dVrDhYtT/e-testi.jpg","https://i.postimg.cc/d3Zwg2hT/e-login.jpg","https://i.postimg.cc/59QXhLd3/ever-home2.jpg"],
+    ProjectType:"Indedual",
+    contributor:null,
+    
   }
-
 ]
 
   return (
