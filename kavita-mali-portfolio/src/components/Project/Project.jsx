@@ -34,19 +34,9 @@ const Projects =[
     contributor:"Monojit Mondal",
     TotalMembers :4
   },
-  {
-    Title:"ShopBag",
-    Date : "11 November 2022",
-    Image : "https://i.postimg.cc/QxwGRKDp/s-admin.jpg",
-    Discription :"Shopbag is clone of meanbuy.com which is an online shopping E-commerce website for Home decore, covers, lifestyle & personal accessories. It is A collaborative project built by a team of 4 developers, completed in 5 days.",
-    TechStack :"React | Redux | CSS | Chakra-UI | HTML",
-    NetlifyLink :"https://fascinating-starlight-f562ee.netlify.app/",
-    GithubLink : "https://github.com/03rahulahuja/violent-market-7865",
-    PictureDescription : ["https://i.postimg.cc/Tw6TBLrk/shop-BAG-HOME.jpg","https://i.postimg.cc/rsp2LSz9/S-LOGIN.jpg","https://i.postimg.cc/QxwGRKDp/s-admin.jpg"],
-    ProjectType:"Team",
-    contributor:"Deepak Kumar",
-    TotalMembers :4
-  },  {
+  
+  , 
+   {
     Title:"EverHour",
     Date : "2 October 2022",
     Image : "https://i.postimg.cc/3xF4Lh5Q/ever-home.jpg",
@@ -58,7 +48,19 @@ const Projects =[
     ProjectType:"Indedual",
     contributor:null,
     
-  }
+  },{
+    Title:"E-Carry",
+    Date : "19 January 2023",
+    Image : "https://ninja-mono1696.github.io/static/media/E-Carry.006e35ae82452c4cf68e.png",
+    Discription :"This is an online shopping E-commerce website for phone cases, covers, lifestyle & personal accessories.A collaborative project built by a team of 4 developers, completed in 5 days.",
+    TechStack :"React | Redux | CSS | Chakra-UI | HTML",
+    NetlifyLink :"https://e-carry.netlify.app/",
+    GithubLink : "https://github.com/ninja-mono1696/E-CARRY",
+    PictureDescription : ["https://i.postimg.cc/DwxfJw30/E-carry-Home.jpg","https://ninja-mono1696.github.io/static/media/E-Carry.006e35ae82452c4cf68e.png","https://i.postimg.cc/fbgbFT8p/e-carry-product-Page.jpg"],
+    ProjectType:"Team",
+    contributor:"Monojit Mondal",
+    TotalMembers :4
+  },
 ]
 
   return (
@@ -79,8 +81,8 @@ const Projects =[
     </div>
     <div style={{bacgroundColor:":rgb(59, 104, 120)",display:'flex',flexDirection :"column" ,gap : "20px" ,border:""}}>
    {
-      Projects.map((el)=>(
-        <ProjectCard key ={el.id} {...el}/>
+      Projects.map((el,i)=>(
+        <ProjectCard key ={i} {...el}/>
       ))
     } 
       </div>   

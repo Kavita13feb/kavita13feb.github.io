@@ -26,7 +26,7 @@ export const Home = () => {
                 <button className='s-btn'>React</button>
                 <button className='s-btn'>Node.js</button>
             </div>
-            <a id="resume-link-2" href='kavita_mali_resume.pdf' download target="_blank" onClick={()=>window.open("https://drive.google.com/file/d/1KSMiCwuOxMaNDyLJfYI85cgOwSUZkvc5/view?usp=share_link")}><button id="resume-button-2">Resume</button></a>    
+<button id="resume-button-2"><a id="resume-link-2" href='kavita_mali_resume.pdf' download target="_blank" onClick={()=>window.open("https://drive.google.com/file/d/1KSMiCwuOxMaNDyLJfYI85cgOwSUZkvc5/view?usp=share_link")}>Resume</a></button>    
          
       
         </Topintro>
@@ -37,7 +37,7 @@ const Topintro = styled.div`
 
 
  border-radius: 10px;
- height: 500px;
+ 
  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  background-color: rgb(27, 79, 98)
 

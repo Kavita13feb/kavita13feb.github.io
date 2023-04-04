@@ -1,6 +1,6 @@
 .sidebar{
  
-    height:800px;
+    height:930px;
     position: fixed;
      width: 19%;
     background-color:rgb(27, 79, 98);
@@ -10,12 +10,13 @@
     
     
 }
+
 .link{
-    width:80%;
-    display:flex;
+width:80%;
+display:flex;
 align-items:center;
 justify-content:center;
-gap:20px;
+gap:30px;
 margin: auto;
 cursor: pointer;
 
@@ -37,28 +38,65 @@ a{
     text-decoration: none;
     color: #a9afb7;   
 }
+
+
 .r-btn{
     margin-top: 50px;
 }
+.sidebar-resume-btn{
+
+    padding: 8px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #a9afb7;
+}
+
 .mid-screen-sidebar{
     display: none;
+   
 }
+
 @media all and (min-width:900px) and (max-width:1140px){
-    /* .sidebar{
-        
+    .sidebar{
+    margin-top: 8%;    
     width:28%;
-    height:950px;
+    
     background-color:rgb(20, 67, 85);
-    } */
-    /* .full-screen-sidebar{
-        display: none;
+    } 
+    .full-screen-sidebar{
+        /* display: none; */
     }
     .mid-screen-sidebar{
-        display: block;
+        /* display: block;
+        gap:50px; */
+    }
+
+    /* .increasegap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:25px;
+       
+        height: 80%;
     } */
 
-
-    /* .right-sidebar{
+     .right-sidebar{
         display: none;  
-    } */
+    }
 }
+
+
+
+@media all and (min-width:100px) and (max-width:919px){
+    /* .sidebar{
+        
+  display: none;
+    } 
+     */
+
+
+      .right-sidebar{
+        display: none;  
+    } 
+ } 

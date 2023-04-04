@@ -13,16 +13,77 @@ color: rgb(20, 67, 85);
 border: none;
 }
 
+#nav-menu{
+    
+display: grid;
+justify-content: space-between;  
+grid-template-columns: 10% 40% 10%;
+gap:10%; 
+position: fixed;
+top: 0;
+width: 100%;
+height:80px;
+background-color:rgb(20, 67, 85);
+}
+.logo{
+    display:flex;
+    justify-content: center; 
+    align-items:center  
+}
+.mid-nav{
+    display:flex;
+justify-content:center;
+gap:5%
+
+}
 #resume-button-1:hover{
     overflow:auto;
     opacity:inherit;
+}
+.navbar{
+    display: grid;
+ justify-content: space-between;  
+grid-template-columns: 10% 40% 10%;
+ gap:10%; 
+position: fixed;
+top: 0;
+width: 100%;
+height:80px;
+background-color:rgb(20, 67, 85);
+}
+
+.footer-nav{
+    display: none;
 }
 .navbar > div{
     /* border: 1px solid blue; */
 }
 @media all and (min-width:900px) and (max-width:1140px){
-    /* .navbar{
-        display: none;
+    #nav-menu{
+        /* display: none; */
+    }
+
+}
+
+@media all and (min-width:100px) and (max-width:919px){
+    #nav-menu{
+        /* display: none; */
+    }
+
+    /* .footer-nav{
+        display: grid;
+     justify-content: space-between;  
+    grid-template-columns: 10% 40% 10%;
+     gap:10%; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:80px;
+    background-color:rgb(20, 67, 85);
+    
+    }
+    .footer-nav{
+        display: block;
     } */
 
 }
