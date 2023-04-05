@@ -30,7 +30,7 @@ portfoliyo-deployement-steps
     }
     
  -  "scripts": {
-    "predeploy":"num run build",
+    "predeploy":"npm run build",
     "deploy":"gh-pages -d build",
     } 
 
