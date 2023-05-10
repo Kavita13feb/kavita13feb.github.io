@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ProjectCard } from './ProjectCard'
 
-
+import { Link } from 'react-scroll'
+import './project.css'
 
 export const Project = () => {
 
@@ -9,8 +10,21 @@ export const Project = () => {
 
 const Projects =[
   {
+    Title:"Meesho",
+    Date : "23 February 2023",
+    Image : "https://i.postimg.cc/J7HqHwJw/Screenshot-5.png",
+    Discription :"Meesho is a social E- commerce platform based in India that allows individuals to start their own online businesses by selling products to their social network. Meesho connects suppliers or manufacturers with resellers who then promote and sell those products through social media platforms like WhatsApp, Facebook, and Instagram.",
+    TechStack :"React | Redux | CSS | Chakra-UI | HTML | Node.js | Express | MongoDb | Moongose",
+    NetlifyLink :"https://frontend-ochre-beta.vercel.app/",
+    GithubLink : "https://github.com/puja2795/meesho",
+    PictureDescription : ["https://i.postimg.cc/x1tyFMMR/home.jpg","https://i.postimg.cc/wxCWhXQR/stenfild-product-Page.jpg"],
+    ProjectType:"Team",
+    contributor:"Pujarini Sahoo",
+    TotalMembers :4
+  },
+  {
     Title:"Steinfild",
-    Date : "23 Feburary 2023",
+    Date : "23 February 2023",
     Image : "https://i.postimg.cc/J7HqHwJw/Screenshot-5.png",
     Discription :" This is clone of nearbuy.com. which is India's first hyper-local online platform that enables customers and local merchants to discover and engage with each other.",
     TechStack :"React | Redux | CSS | Chakra-UI | HTML",
@@ -45,44 +59,43 @@ const Projects =[
     NetlifyLink :"https://dreamy-cendol-3a7724.netlify.app/",
     GithubLink : "https://github.com/Kavita13feb/deep-sense-4601",
     PictureDescription : ["https://i.postimg.cc/3xF4Lh5Q/ever-home.jpg","https://i.postimg.cc/dVrDhYtT/e-testi.jpg","https://i.postimg.cc/d3Zwg2hT/e-login.jpg","https://i.postimg.cc/59QXhLd3/ever-home2.jpg"],
-    ProjectType:"Indedual",
+    ProjectType:"Individual",
     contributor:null,
     
-  },{
-    Title:"E-Carry",
-    Date : "19 January 2023",
-    Image : "https://ninja-mono1696.github.io/static/media/E-Carry.006e35ae82452c4cf68e.png",
-    Discription :"This is an online shopping E-commerce website for phone cases, covers, lifestyle & personal accessories.A collaborative project built by a team of 4 developers, completed in 5 days.",
-    TechStack :"React | Redux | CSS | Chakra-UI | HTML",
-    NetlifyLink :"https://e-carry.netlify.app/",
-    GithubLink : "https://github.com/ninja-mono1696/E-CARRY",
-    PictureDescription : ["https://i.postimg.cc/DwxfJw30/E-carry-Home.jpg","https://ninja-mono1696.github.io/static/media/E-Carry.006e35ae82452c4cf68e.png","https://i.postimg.cc/fbgbFT8p/e-carry-product-Page.jpg"],
-    ProjectType:"Team",
-    contributor:"Monojit Mondal",
-    TotalMembers :4
   },
 ]
+
+
+const [className,setClassName]=useState("normal")
+
+const handleProjectView=(className)=>{
+  setClassName(className)
+}
+
 
   return (
     <div  id="projects" className='section' >
       {/* <h1>check</h1> */}
      <div className='section'>
-    <h1 style={{marginLeft:"-75%"}}>Projects</h1>
+    <h1 >Projects</h1>
     <p className='text'>Hello there! 
     I'm thrilled to share with you some of my recent projects and the skills
-     I've developed along the way. As a Full Stack developer, 
-     I take pride in my ability to tackle complex problems and create impactful solutions
-    that meet and exceed expectations. I hope that my projects will provide you with a 
-      better understanding of my capabilities and how I can contribute to your team or 
-      organization.
-     Without further ado, let's dive into my projects.
+     I've developed along the way. 
      </p>
-    <h2>Project navigation</h2>
+    {/* <h2>Project navigation</h2> */}
+    {/* <div style={{display:'flex',justifyContent:"center" ,border:"1px solid red" ,position:"sticky",top:"0"}}>
+      {
+        Projects.map((el)=>(
+          <Link style={{border:"1px solid red",width:"15%"}}smooth={true} offset={-90} duration={800} to={`${el.Title}`}> <button className='s-btn' >{el.Title}</button></Link>
+        ))
+      }
+      </div> */}
     </div>
-    <div style={{bacgroundColor:":rgb(59, 104, 120)",display:'flex',flexDirection :"column" ,gap : "20px" ,border:""}}>
+    <div>
+      
    {
       Projects.map((el,i)=>(
-        <ProjectCard key ={i} {...el}/>
+        <ProjectCard key ={i} {...el} />
       ))
     } 
       </div>   

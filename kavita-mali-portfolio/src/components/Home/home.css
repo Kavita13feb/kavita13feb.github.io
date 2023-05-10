@@ -3,6 +3,26 @@
     display:grid;
      
 }
+
+.name
+{ margin-right:70%;
+ margin-top: -1%;
+
+}
+
+.section >h1{
+    display: flex;
+   padding-left: 5%;
+}
+
+.contact-details{
+    display: none;
+}
+
+.name ~ h3{
+    margin-right:70%;
+    margin-top: -2%;   
+}
 .s-btn{
     padding: 2% 5% ;
     border-radius: 10px;
@@ -101,5 +121,35 @@
         .text{
             size: 25px;
         }
-       
+
+        .name{ 
+            margin-right:50%;
+
+                     }
+
+                     .name ~ h3{
+                        margin-right:40%;
+                           
+                    }
+
+                    .intro-skills{
+                        display: none;
+                         
+                    }
+                    .contact-details{
+                        display: block;
+                    }
+                    .contact-info{
+                        display: flex;
+                         gap: 8px;
+                          width: 90%;
+                          margin:auto;
+                         align-items: center;
+                       text-decoration: none;
+                       color: #a9afb7;
+                    
+                    }
+                    .total-member{
+                        margin-top: -5%;
+                    }
         }

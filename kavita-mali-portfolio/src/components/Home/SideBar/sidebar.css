@@ -11,6 +11,7 @@
     
 }
 
+
 .link{
 width:80%;
 display:flex;
@@ -58,20 +59,20 @@ a{
 
 @media all and (min-width:900px) and (max-width:1140px){
     .sidebar{
-    margin-top: 8%;    
+    /* margin-top: 8%;     */
     width:28%;
     
     background-color:rgb(20, 67, 85);
     } 
     .full-screen-sidebar{
-        /* display: none; */
+        display: none;
     }
     .mid-screen-sidebar{
-        /* display: block;
-        gap:50px; */
+        display: block;
+        gap:50px;
     }
 
-    /* .increasegap{
+    .increasegap{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -79,7 +80,7 @@ a{
         gap:25px;
        
         height: 80%;
-    } */
+    }
 
      .right-sidebar{
         display: none;  
@@ -89,11 +90,11 @@ a{
 
 
 @media all and (min-width:100px) and (max-width:919px){
-    /* .sidebar{
+    .sidebar{
         
   display: none;
     } 
-     */
+    
 
 
       .right-sidebar{

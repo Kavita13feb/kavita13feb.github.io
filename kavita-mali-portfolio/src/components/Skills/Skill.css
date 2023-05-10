@@ -34,3 +34,22 @@
 .skill-icon{
     border-radius: 10px; 
 }
+
+
+@media all and (min-width:100px) and (max-width:919px){
+
+.skills-container{
+  
+    
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-rows:repeat(4,1fr) ; */
+    
+
+}
+
+}
+
+@media all and (min-width:900px) and (max-width:1140px){
+  
+   
+    }

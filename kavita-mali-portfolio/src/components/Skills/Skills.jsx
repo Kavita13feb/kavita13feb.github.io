@@ -80,7 +80,7 @@ name:"Node.JS"
   return (
     <div  id="skills" className='section' >
     
-    <h1 style={{marginLeft:"-80%"}}>Skills</h1>
+    <h1 >Skills</h1>
     <p className='text'>
       I am excited to showcase my skills. I have a strong passion
        for Website development, and I believe that I have the necessary knowledge and expertise 
