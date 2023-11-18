@@ -1,6 +1,7 @@
 .projects-container{
+    background-color:rgb(91, 133, 149);
+    background-color: #0c0e28;
 
-    background-color:rgb(59, 104, 120);
     display:flex;
     flex-direction :column;
     gap : 20px;
@@ -12,8 +13,66 @@
 }
 
 .normal{
-    background-color:rgb(59, 104, 120);
+    background-color:rgb(91, 133, 149);
+    background-color: #0c0e28;
+
     display:flex;
     flex-direction :column;
     gap : 20px; 
+}
+.date{
+    color: gray;
+     margin-left: -70%;
+     margin-top: -2%;
+      font-size: 15px;
+}
+
+.project-title{
+   font-weight: bold;
+    /* color:rgb(19, 2, 115); */
+}
+.project-card{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition-duration: 0.7s; 
+}
+
+.g-btn{
+    padding: 1% 4%;
+    border-radius: 10px;
+    color: black;
+    background-color: #a9afb7;
+  
+    /* box-shadow: none; */
+    border: none;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+.g-btn:hover{
+    color: aliceblue;
+    background-color:#2D2B55;
+    transition-duration: 0.7s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.d-btn{
+    padding: 1% 4% ;
+    border-radius: 10px;
+    color: black;
+
+    background-color:azure;;
+
+    /* box-shadow: none; */
+    border: none;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+.d-btn:hover{
+    color: aliceblue;
+    background-color:rgb(19, 2, 115);
+    transition-duration: 0.7s;
+    box-shadow: 0 12px 16px 0 rgba(180, 120, 120, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
 }

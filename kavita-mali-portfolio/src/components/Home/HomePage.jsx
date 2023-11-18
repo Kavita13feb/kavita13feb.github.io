@@ -11,10 +11,13 @@ import { SideBar } from './SideBar/SideBar'
 import "./home.css"
 import styled from 'styled-components'
 import { Home } from './Home'
+import { Effect } from '../../ParticleEffect'
 export const HomePage = () => {
  
   return (
     <HomeDiv id="home" >
+        {/* <Effect/> */}
+
         <SideBar/>
         <Midcontainer className='midcontainer'>
 

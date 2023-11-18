@@ -8,14 +8,16 @@ export const Home = () => {
     <Topintro>
       <img
         src="https://i.postimg.cc/63b4XXsC/Navy-And-White-Geometric-Technology-Linked-In-Banner-2.png"
-        width="100%"
+        className="banner"
+        
         style={{ borderRadius: "10px" }}
       />
 
       <img
-        src="https://i.postimg.cc/gkCZtNs2/profile-pic-2.png"
-        width="25%"
-        style={{ borderRadius: "50%", marginRight: "70%", marginTop: "-15%" }}
+        src="profile1.png"
+        width="24%"
+        className="profile"
+        
       />
       <h1 id="user-detail-name" className="name">Kavita Mali</h1>
       <h3 >
@@ -38,9 +40,9 @@ export const Home = () => {
       </div>
 
       <div className="contact-details">
-      <div className='contact-info'><AiFillHome size={"20px"} /><p>Bhilwara ,Rajastan</p></div>
-        <a href="mailto:kavitamali0515@gmail.com" target="_blank"className='contact-info'>< AiTwotoneMail size={"20px"} /><p id="contact-email">kavitamali0515@gmail.com</p></a>
-        <a href="tel:+918740041513" target="_blank" className='contact-info'><AiFillPhone size={"20px"} /><p id="contact-phone">+91 8740041513</p></a>
+      <div className='contact-info'><AiFillHome className="homeicon" /><p>Bhilwara ,Rajastan</p></div>
+        <a href="mailto:kavitamali0515@gmail.com" target="_blank"className='contact-info'>< AiTwotoneMail className="homeicon" /><p id="contact-email">kavitamali0515@gmail.com</p></a>
+        <a href="tel:+918740041513" target="_blank" className='contact-info'><AiFillPhone className="homeicon" /><p id="contact-phone">+91 8740041513</p></a>
         {/* <a href='https://github.com/Kavita13feb'  className='sidebar-contact-info' target="blank" id="contact-github"><AiFillGithub size={"25px"} /><p  id="contact-github"> Kavita13feb </p></a> */}
         {/* <a className='sidebar-contact-info' href='https://www.linkedin.com/in/kavita-mali-132a92210' target="_blank" ><AiFillLinkedin size={"25px"} /><p id="contact-linkedin"> in/kavita-mali</p></a> */}
         {/* <a  className='sidebar-contact-info'  href='kavita_mali_resume.pdf'  target="_blank"onClick={()=>window.open("https://drive.google.com/file/d/1KSMiCwuOxMaNDyLJfYI85cgOwSUZkvc5/view?usp=share_link")}><AiOutlineFolderView size={"30px"} color="#a9afb7" /><button className= "sidebar-resume-btn">Reusme</button></a>   */}
@@ -77,5 +79,8 @@ const Topintro = styled.div`
   border-radius: 10px;
 
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: rgb(27, 79, 98);
+  background-color:rgb(37, 88, 107);
+  
+  // background-color: rgb(27, 79, 98);
+  // background-color:rgb(51, 98, 114)
 `;

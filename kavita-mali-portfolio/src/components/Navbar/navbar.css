@@ -24,6 +24,8 @@ top: 0;
 width: 100%;
 height:80px;
 background-color:rgb(20, 67, 85);
+
+
 z-index: 1;
 }
 .logo{
@@ -54,7 +56,9 @@ position: fixed;
 top: 0;
 width: 100%;
 height:80px;
-background-color:rgb(20, 67, 85);
+background-color:rgb(15, 65, 84);
+
+
 z-index: 1;
 }
 
@@ -84,13 +88,14 @@ z-index: 1;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height:80px;
-    background-color:rgb(19, 2, 115);;
+    height:70px;
+    background-color:rgb(8, 30, 72);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    z-index: 1; 
     }
     .footer-nav{
         display: block;
+        /* color: rgb(51, 98, 114); */
     }
 
 }

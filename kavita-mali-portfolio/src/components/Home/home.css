@@ -1,6 +1,8 @@
 #home{
     margin-top: 6%;
     display:grid;
+    
+
      
 }
 
@@ -27,7 +29,9 @@
     padding: 2% 5% ;
     border-radius: 10px;
     color: aliceblue;
-    background-color:rgb(19, 2, 115);
+    /* background-color:rgb(19, 2, 115); */
+    background-color:rgb(6, 46, 118);
+    /* background-color:rgb(8, 30, 72);  */
     box-shadow: none;
     border: none;
     transition-duration: 0.7s;
@@ -48,30 +52,41 @@
       width: 70%
 
 }
+
 #resume-button-2{
-    width:40%;
+    width:45%;
     padding: 1% 5% ;
 
     border-radius: 10px;
     color: aliceblue;
-    background-color:rgb(21, 28, 56);
+    /* background-color:#2D2B55; */
+    /* background-color:rgb(6, 46, 118); */
+    background-color:rgb(8, 30, 72); 
+
+    /* background-color:rgb(20, 25, 45); */
     box-shadow: none;  
-    margin-left: -60%;
+    margin-left: -53%;
     border:none;
     cursor: pointer;
 }
 #resume-button-2:hover{
     color:aliceblue;
+    /* background-color:rgb(8, 30, 72); */
     background-color:rgb(20, 25, 45);
     transition-duration: 0.4s;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
 }
+
+.homeicon{
+
+    font-size:20px;
+}
 .text{
    
     margin:auto;
-    text-align:justify;
-    padding: 5%;
+    /* text-align:left; */
+    padding: 2%;
     font-size: large;
 }
 
@@ -83,26 +98,153 @@
    
     
     box-shadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px';
-    background-color:rgb(27, 79, 98);
+    /* background-color:rgb(27, 79, 98); */
+    background-color:rgb(37, 88, 107);
+
+    /* background-color: rgb(92, 158, 200); */
     border-radius: 10px;
+
 
 }
 #projects{
-    background-color:rgb(59, 104, 120) ;   
+    background-color:rgb(91, 133, 149) ;   
 }
-@media all and (min-width:900px) and (max-width:1140px){
+
+.banner{
+    width:100%;
+}
+.profile{
+    width:25%;
+     border-radius: 50%;
+      margin-right: 70%;
+       margin-top: -15% 
+}
+@media all and (min-width:919px) and (max-width:1140px){
+    .name ~ h3{
+        margin-top: 5px;
+        /* margin-left:-2%; */
+        font-size: 16x;
+    }
     .midcontainer{
-        width:66%;
-        margin-left:29%;
+        width:68%;
+        margin-left:30%;
     }
     #home{
         margin-top: 1%;
         display:grid;
          
     }
-   
+    
     }
 
+    @media all and (min-width:950px) and (max-width:1140px){
+        .midcontainer{
+            width:68%;
+            margin-left:30%;
+        }
+        #home{
+            margin-top: 1%;
+            display:grid;
+             
+        }
+        
+        
+        }
+
+        @media all and (min-width:1140px) and (max-width:1280px){
+          
+            #home{
+                margin-top: 7%;
+            
+                 
+            } 
+            
+            }
+    
+
+    @media all and (min-width:350px) and (max-width:390px){
+
+.name ~ h3{
+    font-size: 16px;
+
+    margin-left:-5%;
+    margin-top: -2%;
+       
+}
+.date{
+
+    margin-left: -40%;
+
+ 
+}
+
+.contact-info{
+
+     gap: 5px;
+    }
+
+   
+
+    .profile{
+        width:35%;
+        margin-right: 60%;
+     
+    }
+#resume-button-2{
+    width:80%;
+    margin-left: -20%;
+}
+}
+    
+    @media all and (min-width:700px) and (max-width:919px){
+        /* font size */
+        .name{ 
+            margin-left:-18%;
+            font-size: 35px;
+
+                     }
+
+                     .name ~ h3{
+                        margin-left:-20%;
+                        font-size: 24px;
+                    }
+                    .text{
+                        font-size: 25px;
+                    }
+                    .contact-info{
+                      
+                        font-size:25px;
+                        }
+                        .homeicon{
+                            font-size:25px;
+                        }
+                        #resume-button-2{
+                            font-size: 25px;
+                            border-radius: 20px;
+                        }
+                       #contact{
+                        margin-bottom: 10%;
+                       }
+
+                       .total-member{
+                        margin-top: -1%;
+                        /* border :1px solid red; */
+                    }
+
+                    .skills-card-name{
+                        font-size: 25px;
+                    }
+
+                    .profile{
+                        width:45%;
+                        margin-right: 60%;
+                     
+                    }
+            }
+
+
+            /* 1024 not working */
+            /* 1280 margin top */
     @media all and (min-width:100px) and (max-width:919px){
         .midcontainer{
             width:98%;
@@ -118,10 +260,12 @@
         #nav-menu{
             display: none;
         }
-        .text{
-            size: 25px;
-        }
+        
+        .date{
 
+            margin-left: -68%;
+         
+        }
         .name{ 
             margin-right:50%;
 
@@ -152,4 +296,27 @@
                     .total-member{
                         margin-top: -5%;
                     }
+
+                    .profile{
+                        width:45%;
+                        margin-right: 50%;
+                        margin-top: -20%;
+                     
+                    }
+                   .s-btn{
+                    padding: 4% 6% ;
+                   } 
+
+                    #resume-button-2{
+                        width:70%;
+                        margin-left: -28%;
+                        padding: 2% 5% ;
+                        
+                    }
+
+                    .banner{
+                        height:auto
+                    }
         }
+
+  

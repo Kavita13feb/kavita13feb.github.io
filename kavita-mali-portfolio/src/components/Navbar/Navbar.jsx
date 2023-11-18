@@ -32,9 +32,7 @@ export const Navbar = () => {
         < div className='logo'>        
 
          <button  id="resume-button-1"><a id="resume-link-1" className='nav-link resume' style={{color:"black",display:"flex",alignItems:"center",justifyContent:"center",gap:"5px"}} href='Kavita_Mali_Resume.pdf' download target="_blank"onClick={()=>window.open("https://drive.google.com/file/d/1TwW36uYeOF6OPqBcDFCldVaHAhK_vdv9/view?usp=sharing")}><p>Resume</p><TbArrowBarToDown size={"18px"} color="rgb(20, 67, 85)"/></a></button>
-           
-
-        </ div>
+    </ div>
     
 
     </div>

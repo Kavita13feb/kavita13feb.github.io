@@ -3,7 +3,8 @@
     height:930px;
     position: fixed;
      width: 19%;
-    background-color:rgb(27, 79, 98);
+    /* background-color:rgb(27, 79, 98); */
+    background-color:rgb(37, 88, 107);
     color: #a9afb7;
     border-radius:10px
     
@@ -61,8 +62,8 @@ a{
     .sidebar{
     /* margin-top: 8%;     */
     width:28%;
-    
-    background-color:rgb(20, 67, 85);
+    background-color:rgb(37, 88, 107);
+    /* background-color:rgb(20, 67, 85); */
     } 
     .full-screen-sidebar{
         display: none;
